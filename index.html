@@ -1,0 +1,64 @@
+<!--starter-->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "index.css"> <!--css est la référence de code pour le front-->
+    <title>Weather</title> <!--choix du titre-->
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <label for="checkbox" class = "toggler"> <!--bouton changement thème-->
+        <input type="checkbox" id="checkbox" class="theme-toggler-checkbox">
+        <span class="ball"></span>
+        <i class="fa-regular fa-sun"></i>
+        <i class="fa-regular fa-moon"></i>
+    </label>
+
+    <div class = "container">
+        <div class = "search-box">
+            <i class="fa-solid fa-earth-europe"></i>
+            <input type="text" placeholder="Enter a place...">
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <div class="not-found">
+            <img src="404.png">
+            <p>Oops honey ! I didn't find the place ! ( ꩜ ᯅ ꩜;)⁭ ⁭</p>
+        </div>
+
+        <div class="weather-box">
+            <img src="">
+            <p class ="temperature"></p>
+            <p class ="description"></p>
+        </div>
+
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+ <script src="index.js"></script>  <!--on utilise javascript pour le corps-->
+</body>
+
+
+</html>
